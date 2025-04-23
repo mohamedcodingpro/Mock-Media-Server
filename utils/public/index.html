@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Media Server API Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #333; }
+        .endpoint { background: #f4f4f4; padding: 10px 15px; margin: 10px 0; border-left: 4px solid #333; }
+        .method { font-weight: bold; color: #fff; background: #333; padding: 2px 6px; border-radius: 3px; }
+        .get { background: #61affe; }
+        .post { background: #49cc90; }
+    </style>
+</head>
+<body>
+    <h1>Mock Media Server API Documentation</h1>
+    <p>This is a simple mock media server API. Below are the available endpoints and their usage.</p>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/api/media</code>
+        <p>Retrieve all media items.</p>
+        <p><strong>Response:</strong> Array of media objects</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/api/media/:id</code>
+        <p>Retrieve a specific media item by ID.</p>
+        <p><strong>Response:</strong> Media object or 404 if not found</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method post">POST</span> <code>/api/media</code>
+        <p>Add a new media item.</p>
+        <p><strong>Request body (JSON):</strong></p>
+        <pre>{
+    "title": "Media title",
+    "type": "image|video|audio",
+    "path": "/path/to/media.ext"
+}</pre>
+        <p><strong>Response:</strong> Success message or error</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span> <code>/media/:filename</code>
+        <p>Access media files directly (Bonus feature).</p>
+    </div>
+</body>
+</html>

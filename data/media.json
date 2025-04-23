@@ -1,0 +1,42 @@
+{
+  "media": [
+    {
+      "id": 1,
+      "type": "movies",
+      "title": "Inception",
+      "director": "Christopher Nolan",
+      "year": 2010
+    },
+    {
+      "id": 2,
+      "type": "movies",
+      "title": "Black Panther",
+      "director": "Ryan Coogler",
+      "year": 2018
+    },
+    {
+      "id": 3,
+      "type": "series",
+      "title": "Breaking Bad",
+      "seasons": 5
+    },
+    {
+      "id": 4,
+      "type": "series",
+      "title": "Stranger Things",
+      "seasons": 4
+    },
+    {
+      "id": 5,
+      "type": "songs",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd"
+    },
+    {
+      "id": 6,
+      "type": "songs",
+      "title": "Shape of You",
+      "artist": "Ed Sheeran"
+    }
+  ]
+}
